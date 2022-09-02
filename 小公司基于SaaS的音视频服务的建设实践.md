@@ -47,6 +47,8 @@
 ![image](https://user-images.githubusercontent.com/5134790/188067596-41058eeb-ee27-4465-995d-b74ff05f4119.png)
 
 ## **优化视频资源**：HLS+H265+FMP4
+#### 不同视频格式的对比
+![image](https://user-images.githubusercontent.com/5134790/188093858-d8d72c1d-15d5-4f0f-986b-de6b81179ce0.png)
 
 #### 多分辨率自适应、多线路冗余（支持CDN线路故障自动切换，参见：HTTP Live Streaming协议草案at 2009/10/05）
 
@@ -77,4 +79,20 @@
   - 基于每个厂商在不同地区的卡顿数量，最终会算出一个地区最佳适配列表。
   - 后续服务端下发资源时，如果该用户没有对应的”用户厂商适配表“，那么就使用”地区厂商适配表“，进行优先级排序。
 
+#### 策略
+
 ![image](https://user-images.githubusercontent.com/5134790/188067762-e4f7ddfd-f03f-49ed-8505-7fc57db9f2c8.png)
+
+#### 数据定义
+
+![image](https://user-images.githubusercontent.com/5134790/188094165-713e848a-8cdf-4d9d-be0f-b9139aa2aca6.png)
+
+#### 核心流程
+
+![image](https://user-images.githubusercontent.com/5134790/188094338-d88277ef-f469-468b-8cdb-9681a844e641.png)
+
+![image](https://user-images.githubusercontent.com/5134790/188094372-3a19ebc4-2e78-4d46-9d76-a720e4884450.png)
+
+## 衡量指标
+
+![image](https://user-images.githubusercontent.com/5134790/188094579-4377b44d-0fd1-4674-93ea-9a0b4000a388.png)
