@@ -54,7 +54,7 @@
 #### 多分辨率自适应、多线路冗余（支持CDN线路故障自动切换，参见：HTTP Live Streaming协议草案at 2009/10/05）
 
 ![image](https://user-images.githubusercontent.com/5134790/188067645-d5ecc951-41f8-4cb7-ae6f-0be98edde90b.png)
-
+注：这里同一个640*360的分辨率，配置了3个不同的CDN地址，用来冗余容错
 #### 实现效果
 
 ![image](https://user-images.githubusercontent.com/5134790/188067675-35416a35-e9c9-4a73-97e7-67d89c9847e5.png)
