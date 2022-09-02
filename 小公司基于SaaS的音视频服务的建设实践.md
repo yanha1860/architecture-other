@@ -13,9 +13,7 @@
 - 高峰期云厂商CDN节点负载高，即使用了HttpDNS直连也不一定能保障线路最优。
 
   **这里对影响用户观看体验的问题进行了梳理：**
-
-![image-20220902112919761](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902112919761.png)
-
+![image](https://user-images.githubusercontent.com/5134790/188067377-408b6106-8331-4ede-b122-37a51642207d.png)
 # 如何改善
 
 - **提升音视频服务的可观测性**，类似RUM，采集播放视频过程中的相关指标（收集卡顿日志）
@@ -30,33 +28,33 @@
 
 #### 卡顿数据上报策略的抽象定义
 
-![image-20220902122836526](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902122836526.png)
+![image](https://user-images.githubusercontent.com/5134790/188067404-626061b0-f2dd-4921-8180-77feef4e2080.png)
 
 ###### ExoPlayer实现
 
-![image-20220902122932773](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902122932773.png)
+![image](https://user-images.githubusercontent.com/5134790/188067459-3e595c75-9775-44e7-aaf2-16003d1a108b.png)
 
 ###### AVPlayer实现
 
-![image-20220902122946605](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902122946605.png)
+![image](https://user-images.githubusercontent.com/5134790/188067491-f117c9e6-dbea-4f7e-b8d0-4343cf20fbac.png)
 
 ###### 监控大盘（部分内容）
 
-![image-20220902123758022](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902123758022.png)
+![image](https://user-images.githubusercontent.com/5134790/188067531-ccd0ba9d-e4ea-4679-a7f4-55fb5d81c4c6.png)
 
-![image-20220902123418755](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902123418755.png)
+![image](https://user-images.githubusercontent.com/5134790/188067556-5f74220b-c301-4ae5-b133-ae0005aaa3e5.png)
 
-![image-20220902123656264](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902123656264.png)
+![image](https://user-images.githubusercontent.com/5134790/188067596-41058eeb-ee27-4465-995d-b74ff05f4119.png)
 
 ## **优化视频资源**：HLS+H265+FMP4
 
 #### 多分辨率自适应、多线路冗余（支持CDN线路故障自动切换，参见：HTTP Live Streaming协议草案at 2009/10/05）
 
-![image-20220902125026586](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902125026586.png)
+![image](https://user-images.githubusercontent.com/5134790/188067645-d5ecc951-41f8-4cb7-ae6f-0be98edde90b.png)
 
 #### 实现效果
 
-![image-20220902125710507](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902125710507.png)
+![image](https://user-images.githubusercontent.com/5134790/188067675-35416a35-e9c9-4a73-97e7-67d89c9847e5.png)
 
 ## 智能调度
 
@@ -79,4 +77,4 @@
   - 基于每个厂商在不同地区的卡顿数量，最终会算出一个地区最佳适配列表。
   - 后续服务端下发资源时，如果该用户没有对应的”用户厂商适配表“，那么就使用”地区厂商适配表“，进行优先级排序。
 
-![image-20220902133141406](C:\Users\yesoul\AppData\Roaming\Typora\typora-user-images\image-20220902133141406.png)
+![image](https://user-images.githubusercontent.com/5134790/188067762-e4f7ddfd-f03f-49ed-8505-7fc57db9f2c8.png)
