@@ -48,7 +48,8 @@
 
 ## **优化视频资源**：HLS+H265+FMP4
 #### 不同视频格式的对比
-![image](https://user-images.githubusercontent.com/5134790/188093858-d8d72c1d-15d5-4f0f-986b-de6b81179ce0.png)
+
+![image](https://user-images.githubusercontent.com/5134790/188095385-dee649d8-9211-4e4d-9b8f-36e391206e70.png)
 
 #### 多分辨率自适应、多线路冗余（支持CDN线路故障自动切换，参见：HTTP Live Streaming协议草案at 2009/10/05）
 
@@ -85,9 +86,11 @@
 
 #### 数据定义
 
-![image](https://user-images.githubusercontent.com/5134790/188094165-713e848a-8cdf-4d9d-be0f-b9139aa2aca6.png)
+![image](https://user-images.githubusercontent.com/5134790/188093858-d8d72c1d-15d5-4f0f-986b-de6b81179ce0.png)
 
 #### 核心流程
+
+![image](https://user-images.githubusercontent.com/5134790/188094165-713e848a-8cdf-4d9d-be0f-b9139aa2aca6.png)
 
 ![image](https://user-images.githubusercontent.com/5134790/188094338-d88277ef-f469-468b-8cdb-9681a844e641.png)
 
