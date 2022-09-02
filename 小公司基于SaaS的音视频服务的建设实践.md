@@ -94,8 +94,6 @@
 
 ![image](https://user-images.githubusercontent.com/5134790/188094338-d88277ef-f469-468b-8cdb-9681a844e641.png)
 
-![image](https://user-images.githubusercontent.com/5134790/188094372-3a19ebc4-2e78-4d46-9d76-a720e4884450.png)
-
 ## 衡量指标
 
 ![image](https://user-images.githubusercontent.com/5134790/188094579-4377b44d-0fd1-4674-93ea-9a0b4000a388.png)
